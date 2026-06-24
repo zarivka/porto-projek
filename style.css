@@ -1,24 +1,31 @@
 body {
-    background-color:rgb(0, 12, 51);
+    background-color:rgb(255, 255, 255);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0px 0px;
+    padding: 0px;
 }
 
 /* Style untuk header */
 header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100px;
-    background-color: rgb(0, 0, 0);
+    margin: 0;
+    background-color: rgb(1, 0, 63);
 }
 
 nav {
-    position: fixed;
     top: 0;
     margin:0%;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .logo {
@@ -36,18 +43,71 @@ nav {
     padding: 20px;
 }
 /* style untuk main */
-section {
-    background-color: #0923b8;
-      width: 100%;
-    height: 150px;
-}
-.img1 {
-    width: 100px;
-    height: 100px;
-    padding-right: 100px;
+
+main {
+    color:rgb(0, 0, 0);
+    margin: 130px 30px;
+    font-family: sans-serif;
 }
 
-.txt1 {
-    color: white;
-    padding: 20px;
+/*beranda*/
+.beranda {
+    display: flex;         
+    align-items: center;   
+    gap: 20px;              /* Jarak antara foto dan teks */
+    margin-bottom: 50px;
 }
+
+.br-img {
+    background:linear-gradient(to bottom, #00eeff, #236e64);
+    height: 250px;
+    width: 250px;
+    border-radius:10%;
+}
+
+.foto1 {
+    width: 250px;           /* Ukuran diperbesar sedikit agar teks h1 seimbang */
+    height: 250px;
+    border-radius: 10%;
+}
+
+.br-txt {
+    flex: 1;
+}
+
+.txt-color {
+   background: linear-gradient(to right, #7c18ff, #0a37ff, #00e5ff);
+  -webkit-background-clip: text;
+  background-clip: text;        
+  -webkit-text-fill-color: transparent;
+}
+
+/*tentang saya*/
+.tentang-saya {
+    display: flex;         
+    align-items: center;   
+    gap: 20px;              /* Jarak antara foto dan teks */
+    margin-bottom: 50px;
+}
+
+/*pendidikan*/
+.pendidikan {
+
+}
+
+/*pengalaman*/
+.pengalaman {
+
+}
+
+/*portofolio*/
+.portofolio {
+
+}
+
+/*kontak*/
+.kontak {
+
+}
+
+/*footer*/

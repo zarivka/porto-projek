@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML + CSS + JS - Demo Lengkap</title>
+     <link href="blr.css" rel="stylesheet">
+   
+</head>
+<body>
+
+    <!-- ======================================== -->
+    <!-- BAGIAN HTML (Semua konten halaman)       -->
+    <!-- ======================================== -->
+    <div class="container">
+    
+        <!-- ===== HEADER ===== -->
+        <header>
+            <h1>🚀 Demo HTML + CSS + JavaScript</h1>
+            <p style="color: #4a5568; margin-bottom: 20px;">
+                Pelajari cara kerja ketiganya secara bersamaan. 
+                Buka <strong>Console</strong> browser (F12) untuk lihat output JS!
+            </p>
+        </header>
+
+        <!-- ===== SECTION 1: TEXT & LIST ===== -->
+        <section>
+            <h2>📝 1. Teks & List</h2>
+            <div class="card">
+                <h3>Heading dengan <span style="color:#e53e3e;">span</span> berwarna</h3>
+                <p>Ini paragraf biasa. <br> Ini pakai <strong>br</strong> (pindah baris).</p>
+                <hr>
+                <p><span style="font-weight:bold;">Span</span> dipakai untuk styling <span style="color:green;">sebagian kecil</span> teks.</p>
+                <label for="pesanInput">Pesan (textarea):</label>
+                <textarea id="pesanInput" rows="3" placeholder="Tulis pesan panjang di sini..."></textarea>
+            </div>
+            <div class="card card-green">
+                <h4>Contoh List</h4>
+                <ul>
+                    <li>HTML untuk struktur</li>
+                    <li>CSS untuk tampilan</li>
+                    <li>JavaScript untuk interaksi</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 2: FLEXBOX (CSS) ===== -->
+        <section>
+            <h2>📐 2. Flexbox (CSS Layout)</h2>
+            <p>Pakai <code>display: flex</code> untuk membuat layout responsif:</p>
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+            <p style="font-size:14px; color:#718096;">
+                👆 Coba resize browser, lihat item menyesuaikan otomatis!
+            </p>
+        </section>
+
+        <!-- ===== SECTION 3: FORM ===== -->
+        <section>
+            <h2>📋 3. Form (Input & Tombol)</h2>
+            <div class="card">
+                <label for="namaInput">Nama:</label>
+                <input type="text" id="namaInput" placeholder="Masukkan nama kamu">
+
+                <label for="umurInput">Umur:</label>
+                <input type="number" id="umurInput" placeholder="Masukkan umur">
+
+                <label for="kotaSelect">Kota:</label>
+                <select id="kotaSelect">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Surabaya">Surabaya</option>
+                </select>
+
+                <button id="btnSubmit">Kirim Data</button>
+                <button id="btnUbahWarna" style="background: #e53e3e; margin-left: 10px;">
+                    Ubah Warna Card
+                </button>
+                <button id="btnReset" style="background: #718096;">
+                    Reset
+                </button>
+            </div>
+
+            <!-- Tempat hasil dari JS -->
+            <div id="hasilOutput" style="margin-top: 15px; padding: 15px; background: #e2e8f0; border-radius: 8px;">
+                <strong>Hasil akan muncul di sini 👇</strong>
+                <p id="outputText">Belum ada data</p>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 4: DOM MANIPULATION ===== -->
+        <section>
+            <h2>🖱️ 4. Interaksi JavaScript</h2>
+            <div class="card card-red">
+                <p id="teksSapaan">Klik tombol di bawah untuk ubah teks ini!</p>
+                <button id="btnSapa">Sapa Saya</button>
+                <button id="btnToggleHighlight">Toggle Highlight</button>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: TABEL ===== -->
+<section>
+    <h2>📊 5. Tabel (Data Siswa)</h2>
+    <div class="card">
+        <table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
+            <thead style="background: #2b6cb0; color: white;">
+                <tr>
+                    <th style="padding: 10px;">No</th>
+                    <th style="padding: 10px;">Nama</th>
+                    <th style="padding: 10px;">Kelas</th>
+                    <th style="padding: 10px;">Nilai</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px;">1</td>
+                    <td style="padding: 10px;">Budi</td>
+                    <td style="padding: 10px;">12 RPL</td>
+                    <td style="padding: 10px;">90</td>
+                </tr>
+                <tr style="background: #f7fafc;">
+                    <td style="padding: 10px;">2</td>
+                    <td style="padding: 10px;">Ani</td>
+                    <td style="padding: 10px;">12 RPL</td>
+                    <td style="padding: 10px;">85</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">3</td>
+                    <td style="padding: 10px;">Cindy</td>
+                    <td style="padding: 10px;">12 RPL</td>
+                    <td style="padding: 10px;">78</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ===== SECTION: GAMBAR & LINK ===== -->
+<section>
+    <h2>🔗 6. Gambar & Link</h2>
+    <div class="card card-green">
+        <p><strong>Link:</strong> Kunjungi <a href="https://google.com" target="_blank">Google</a> (buka tab baru)</p>
+        <p><strong>Gambar:</strong></p>
+        <img src="https://via.placeholder.com/200x100/2b6cb0/ffffff?text=Contoh+Gambar" alt="Contoh gambar placeholder" style="border-radius: 8px;">
+        <p style="font-size:14px; color:#718096;">👆 Gambar dari internet pakai URL placeholder</p>
+    </div>
+</section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e2e8f0; text-align: center; color: #718096;">
+            <p>&copy; 2026 - Belajar Fullstack JS</p>
+        </footer>
+
+    </div>
+      <script src="bljr.js"></script>
+</body>
+</html>
