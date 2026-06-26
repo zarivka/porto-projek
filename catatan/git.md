@@ -376,4 +376,71 @@ git push -u origin main
 
 ---
 
+1. git stash (Menyimpan Perubahan Sementara)
+
+Apa itu? Menyimpan perubahan yang belum di-commit agar bisa dikerjakan nanti.
+
+Kenapa perlu? Saat kamu sedang ngerjain fitur A, tiba-tiba ada bug darurat fitur B. Dengan stash, kamu bisa simpan sementara pekerjaanmu, perbaiki bug, lalu lanjutkan lagi.
+bash
+
+# Simpan perubahan sementara
+git stash save "WIP: fitur login setengah jadi"
+
+# Lihat daftar stash
+git stash list
+
+# Kembalikan stash terakhir
+git stash pop
+
+# Kembalikan stash tertentu
+git stash apply stash@{1}
+
+# Hapus stash
+git stash drop
+
+2. git reset vs git revert (Membatalkan Commit)
+Perintah	Fungsi	Kapan Pakai
+git reset --soft HEAD~1	Hapus commit terakhir, perubahan tetap ada	Sebelum push (lokal)
+git reset --hard HEAD~1	Hapus commit & perubahan (⚠️ BERBAHAYA)	Hanya untuk kode yang sudah di-backup
+git revert HEAD	Buat commit baru untuk membatalkan commit sebelumnya	Setelah push (aman untuk tim)
+bash
+
+# Menghapus commit terakhir (sebelum push)
+git reset --soft HEAD~1  # Perubahan tetap ada di staging
+
+# Membatalkan commit yang sudah di-push (aman)
+git revert HEAD
+git push origin main
+
+Aturan: Jangan pernah pakai reset --hard jika sudah di-push ke tim!
+3. git rebase (Menggabungkan Commit)
+
+Apa itu? Menggabungkan beberapa commit menjadi 1 (squash) atau mengubah urutan commit.
+
+Kenapa perlu? Agar history commit menjadi bersih dan mudah dibaca. Dalam satu pull request, idealnya hanya ada 1 commit per fitur, bukan 20 commit kecil.
+bash
+
+# Menggabungkan 3 commit terakhir menjadi 1
+git rebase -i HEAD~3
+
+# Di editor yang muncul, ganti "pick" menjadi "squash" untuk commit yang ingin digabung
+# Simpan dan beri pesan commit baru
+
+4. git remote (Mengelola Koneksi ke GitHub)
+bash
+
+# Lihat daftar remote
+git remote -v
+
+# Ubah URL remote
+git remote set-url origin https://github.com/username/repo-baru.git
+
+# Hapus remote
+git remote remove origin
+
+# Tambah remote baru
+git remote add origin https://github.com/username/repo.git
+
+
+
 > **Kesimpulan:** Git & GitHub bukan fitur opsional. Ini adalah **bagian dari workflow profesional** yang harus kamu pakai setiap hari. Biasakan mulai dari sekarang, karena di dunia kerja, ini adalah alat utama. 💪
