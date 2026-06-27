@@ -1,15 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color:rgb(255, 255, 255);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px 0px;
-    padding: 0px;
+}
+/* Style untuk tombol */
+button:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 /* Style untuk header */
 header {
-    display: flex;
-    flex-direction: row;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,31 +22,33 @@ header {
     height: 100px;
     margin: 0;
     background-color: rgb(1, 0, 63);
+    z-index: 1000; /* Memastikan header selalu di layer paling atas saat di-scroll */
 }
 
 nav {
-    top: 0;
-    margin:0%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
 }
 
 .logo {
     color: white;
     font-weight: bold;
     text-align: left;
-    padding-right: 150px;
+    padding-right: 100px;
 }
 
-.nav-link {
+.nav-list {
     color: white;
-    font-weight: bold;        
-    text-decoration: none;
-    text-align: left;
-    padding: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
+
 /* style untuk main */
 
 main {
@@ -51,9 +58,10 @@ main {
 }
 
 /*beranda*/
-.beranda {
+#beranda {
     display: flex;         
-    align-items: center;   
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;              /* Jarak antara foto dan teks */
     margin-bottom: 50px;
 }
@@ -83,11 +91,12 @@ main {
 }
 
 /*tentang saya*/
-.tentang-saya {
+#tentang-saya {
     display: flex;         
     justify-content: flex-start;
     gap: 50px;              /* Jarak antara foto dan teks */
     margin-bottom: 50px;
+    flex-wrap: wrap;          /* Membuat teks dan foto bisa membungkus jika layar sempit */
 }
 
 .box1 {
@@ -99,22 +108,22 @@ main {
 }
 
 /*pendidikan*/
-.pendidikan {
+#pendidikan {
 
 }
 
 /*pengalaman*/
-.pengalaman {
+#pengalaman {
 
 }
 
 /*portofolio*/
-.portofolio {
+#portofolio {
 
 }
 
 /*kontak*/
-.kontak {
+#kontak {
    
 }
 
