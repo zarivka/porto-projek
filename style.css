@@ -251,10 +251,94 @@ scroll-margin-top: 100px;
 }
 
 /*footer*/
-.ftr {
-     color: rgb(0, 0, 0);
-    background-color: #ffffff;
+
+#credit {
+    background-color:  #0a37ff;
     width: auto;
     height: auto;
-    padding: 20px 20px;
+    padding: 50px 30px;
+    color: rgb(255, 255, 255);
+}
+
+.hak_cipta {
+    color: rgb(255, 255, 255);
+}
+
+.text--style1 {
+    font-size: 16px;
+}
+
+.text--style2 {
+    font-size: 40px;
+    color: #000000;
+}
+
+.ftr--container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 10px 0;
+}
+
+.tekonologi {
+    line-height: 1.5;
+}
+
+.tekno--sty1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.tekno--sty1 li {
+    
+    font-size: 16px;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.tekno--sty1 li:hover {
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+}
+
+
+.social--link {
+    line-height: 1.5;
+}
+
+.social--sty1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.social--sty2 li {
+    font-size: 18px;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.social--sty2 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.social--sty2 a:hover {
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+}
+
+.penutup {
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.penutup p {
+    font-size: 50px;
 }
