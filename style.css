@@ -247,8 +247,60 @@ scroll-margin-top: 100px;
 
 /*kontak*/
 #kontak {
-   margin: 150px 30px;
+   padding: 50px 30px;
+   background-color: #001366;
+   height: auto;
+   width: auto;
 }
+
+.heading--style {
+    color: rgb(0, 204, 255);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.kontak--container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap:wrap; 
+    gap: 20px;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.kontak-card {
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    flex: 1 1 160px;
+    max-width: 200px;
+    min-width: 140px;
+}
+
+.kontak-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #00ccff;
+}
+
+.kontak-icon:hover {
+    transform: scale(1.2) rotate(5deg);
+    color: white;
+}
+
+.kontak-card h3 {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
 
 /*footer*/
 
@@ -262,6 +314,7 @@ scroll-margin-top: 100px;
 
 .hak_cipta {
     color: rgb(255, 255, 255);
+    margin: 0;
 }
 
 .text--style1 {
@@ -276,20 +329,19 @@ scroll-margin-top: 100px;
 .ftr--container {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 50px;
     margin: 10px 0;
 }
 
-.tekonologi {
-    line-height: 1.5;
+.teknologi {
+    margin: 0;
 }
 
 .tekno--sty1 {
     font-size: 30px;
     font-weight: bold;
-    padding: 5px 0;
 }
 
 .tekno--sty1 li {
@@ -322,6 +374,8 @@ scroll-margin-top: 100px;
 }
 
 .social--sty2 a {
+    display: flex;
+    justify-content: flex-start;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }

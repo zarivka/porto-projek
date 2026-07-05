@@ -1,15 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="id">
-<head>
+<head> <!--informasi mengenai web-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio Muhammad Manazhir Ahsan - Pelajar RPL SMK 20 Semarang">
     <title>MANAZHIR.DEV_PORTO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-<header>
+
+<header> <!--bagian navigasi-->
     <nav class="header__nav">
             <div class="nav--logo">MANAZHIR<span style="color: #00b7ff;">.DEV</span></div>
             <ul class="nav--list">
@@ -23,7 +25,9 @@
     </nav>
 </header>
 
-<main>
+<main> <!--isi dari web-->
+
+<!--=== beranda: perkenalan ===-->
     <section id="beranda">
         <div class="beranda--textsetting">
             <p>Halo semuanya 👋, Saya</p>
@@ -35,8 +39,9 @@
             <img class="beranda--imgbackground--img" src="nazir.png" alt="manazhir">
         </div>
     </section>
-
-    <section id="tentang-saya">
+    
+<!--=== Tentang saya: berisi biodata diri, keahlian saat ini, hal yang sedang dikembangkan, pengalaman/proyek ==-->
+    <section id="tentang-saya"> 
         <h2>Tentang Saya</h2>
             <div class="tentang-saya--container">
                 <div class="box1">
@@ -48,7 +53,7 @@
                     <p>HTML, CSS, JavaScript (dasar), desain UI/UX, problem solving, dan logika pemrograman.</p>
                 </div>
                 <div class="box1">
-                    <h3>Skill Saat Ini</h3>
+                    <h3>Hal Yang Sedang Dikembangkan</h3>
                     <p>Sedang belajar:desain grafis (Gimp),UI/UX desain (figma),GitHub, Git, CSS Vanilla, JavaScript, dan html</p>
                 </div>
                 <div class="box1">
@@ -59,7 +64,8 @@
 
     </section>
 
-    <section id="pendidikan">
+<!--=== Pendidikan: Berisi riwayat pendidikan ===-->
+    <section id="pendidikan"> 
         <h2>Pendidikan</h2>
 
         <div class="pendidikan--container">
@@ -95,25 +101,60 @@
         </div>
     </section>
 
-    <section id="pengalaman">
+<!--=== Pengalaman: Berisi pengalaman proyek sesuai jurusan ===-->
+    <section id="pengalaman"> 
         <h2>Pengalaman</h2>
         
     </section>
     
-    <section id="portofolio">
+<!--=== Portofolio: Berisi projek apa saja yang saya kerjakan ===-->
+    <section id="portofolio"> 
         <h2>Portofolio</h2>
         
     </section>
 
+<!--=== Kontak: Berisi Email, no.telp, no.wa, github, linkend,ig  ===-->
     <section id="kontak">
-        <h2>Kontak</h2>
-        
+
+        <h2 class="heading--style">Kontak</h2>
+
+        <div class="kontak--container">
+                 <!--email-->
+                <a href="mailto:emailkamu@gmail.com" target="_blank" class="kontak-card">
+                    <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                </a>
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/628xxxxxxx" target="_blank" class="kontak-card">
+                    <div class="kontak-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/username" target="_blank" class="kontak-card">
+                    <div class="kontak-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://instagram.com/username" target="_blank" class="kontak-card">
+                    <div class="kontak-icon"><i class="fab fa-instagram"></i></div>
+                    <h3>Instagram</h3>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/username" target="_blank" class="kontak-card">
+                    <div class="kontak-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                </a>
+            </div>
     </section>
     
 
 </main>
 
-<footer id="credit">
+<footer id="credit"> <!--Credit : Berisi informasi mengenai hak cipta , keterangan teknologi, sosial media, dan motto-->
     
     <div class="hak_cipta">
         <p class="text--style1">© 2026 Manazhir Dev</p>
