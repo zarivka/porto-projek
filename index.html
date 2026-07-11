@@ -13,8 +13,8 @@
 
 <header> <!--bagian navigasi-->
     <nav class="header__nav">
-            <div class="nav--logo">MANAZHIR<span style="color: #00b7ff;">.DEV</span></div>
-            <ul class="nav--list">
+            <div class="header__logo">MANAZHIR<span class="header__logo-main">.DEV</span></div> <!--=== logo web ===-->
+            <ul class="header__list"> <!--=== list link navigasi ===-->
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#tentang-saya">Tentang Saya</a></li>
                 <li><a href="#pendidikan">Pendidikan</a></li>
@@ -28,35 +28,37 @@
 <main> <!--isi dari web-->
 
 <!--=== beranda: perkenalan ===-->
-    <section id="beranda">
-        <div class="beranda--textsetting">
+    <section id="beranda" class="beranda">
+        <div class="hero__content"> <!--==== perkenalan di sebelah kiri ===-->
             <p>Halo semuanya 👋, Saya</p>
-            <div class="beranda--textsetting--Textmain">MUHAMMAD MANAZHIR AHSAN</div>
+            <div class="hero__Textmain">MUHAMMAD MANAZHIR AHSAN</div>
             <p>Saya adalah programmer pemula</p>
             <button><a href="#kontak">Contact Me</a></button>
         </div>
-        <div class="beranda--imgbackground">
-            <img class="beranda--imgbackground--img" src="nazir.png" alt="manazhir">
+
+        <div class="hero__img"><!--=== gambar pemilik web sebelah kanan ====-->
+            <img class="hero__img--profile" src="nazir.png" alt="manazhir">
         </div>
     </section>
     
 <!--=== Tentang saya: berisi biodata diri, keahlian saat ini, hal yang sedang dikembangkan, pengalaman/proyek ==-->
-    <section id="tentang-saya"> 
+    <section id="tentang-saya" class="tentang-saya"> 
         <h2>Tentang Saya</h2>
-            <div class="tentang-saya--container">
-                <div class="box1">
+
+            <div class="about__container"><!--== pembungkus box ==-->
+                <div class="about__box">
                     <h3>Sebagai Pelajar Di Jurusan RPL</h3>
                     <p>Halo! Saya Muhammad Manazhir Ahsan, pelajar SMK Negeri 10 Semarang jurusan Rekayasa Perangkat Lunak (RPL). Saya memiliki ketertarikan di dunia programming, IoT, dan pengembangan web. Saya percaya bahwa teknologi adalah masa depan, dan saya sedang membangun fondasi yang kuat untuk menjadi bagian dari masa depan itu.</p>
                 </div>
-                <div class="box1">
+                <div class="about__box">
                     <h3>Keahlian</h3>
                     <p>HTML, CSS, JavaScript (dasar), desain UI/UX, problem solving, dan logika pemrograman.</p>
                 </div>
-                <div class="box1">
+                <div class="about__box">
                     <h3>Hal Yang Sedang Dikembangkan</h3>
                     <p>Sedang belajar:desain grafis (Gimp),UI/UX desain (figma),GitHub, Git, CSS Vanilla, JavaScript, dan html</p>
                 </div>
-                <div class="box1">
+                <div class="about__box">
                     <h3>Pengalaman / Proyek</h3>
                     <p>Landing page sederhana (HTML & CSS), kalkulator berbasis C++ (logika aritmatika), dan website portofolio ini (HTML, CSS, JS)</p>
                 </div>
@@ -65,87 +67,128 @@
     </section>
 
 <!--=== Pendidikan: Berisi riwayat pendidikan ===-->
-    <section id="pendidikan"> 
+    <section id="pendidikan" class="pendidikan"> 
         <h2>Pendidikan</h2>
 
-        <div class="pendidikan--container">
+        <div class="education__container"> <!--== pembungkus box ==-->
 
-            <div class="pendidikan--box">
-                <div class="pendidikan--box_insert">
+            <div class="education__box">
+                <div class="education__content">
                 <h3>SMKN 10 SEMARANG (2024-2026)</h3>
                 <p>jurusan: Rekayasa Perangkat Lunak (RPL)</p>
-                <div class="skill--text">Skill:</div>
-                <ul class="skill--list">
+                <div class="education__text-skill">Skill:</div>
+                <ul class="education__list">
                     <li>- HTML</li>
                     <li>- CSS</li>
                     <li>- JavaScript</li>
                     <li>- UI/UX Design</li>
                 </ul>
                 </div>
-                <img class="pendidikan--img" src="smk10.png" alt="SMKN 10 Semarang">
+                <img class="education__img" src="smk10.png" alt="SMKN 10 Semarang">
             </div>
 
-        <div class="pendidikan--box">
-            <div class="pendidikan--box_insert">
+        <div class="education__box">
+            <div class="education__content">
                 <h3>SMPN 17 SEMARANG (2021-2024)</h3>
             </div>
-            <img class="pendidikan--img" src="smp17.png" alt="SMPN 17 Semarang">
+            <img class="education__img" src="smp17.png" alt="SMPN 17 Semarang">
         </div>
 
-        <div class="pendidikan--box">
-            <div class="pendidikan--box_insert">
+        <div class="education__box">
+            <div class="education__content">
                 <h3>SDN PETOMPON 02 SEMARANG (2015-2021)</h3>
             </div>
-            <img class="pendidikan--img" src="sdnp02.png" alt="SDN PETOMPON 02 SEMARANG">
+            <img class="education__img" src="sdnp02.png" alt="SDN PETOMPON 02 SEMARANG">
         </div>
         </div>
     </section>
 
 <!--=== Pengalaman: Berisi pengalaman proyek sesuai jurusan ===-->
-    <section id="pengalaman"> 
+    <section id="pengalaman" class="pengalaman"> 
         <h2>Pengalaman</h2>
-        
+
+       <div class="experience__container">
+
+            <div class="experience__box">
+                <div class="experience__heading">
+                    <h3>PROTOTYPE APP COFFE SHOP</h3>
+                    <p class="experience__text--style">[MAGANG]</p>
+                </div>
+                <P>UPT KEARSIPAN UNNNES | 27 Januari - 5 Febuari 2026</P>
+                <div class="experience__content">
+                    <p>Proyek : Membuat UI,UX untuk tampilan web UPT KEARSIPAN UNNES</p>
+                    <p>Teknologi : Figma</p>
+                    <p>Deskripsi : Tugas dari Pak Agung selaku pemimpin UPT Kearsipan untuk membuat tampilan web jauh lebih bagus</p>
+                </div>
+            </div>
+
+            <div class="experience__box">
+                <div class="experience__heading">
+                    <h3>PROTOTYPE APP WhatsApp</h3>
+                    <p class="experience__text--style">[SEKOLAH]</p>
+                </div>
+                <P>SMKN 10 Semarang | 2024</P>
+                <div class="experience__content">
+                    <p>Proyek : Merombak UI,UX untuk tampilan aplikasi WhatsApp</p>
+                    <P>Teknologi : Figma</P>
+                    <p>Deskripsi : Tugas kelompok dari pak Sona. Tampilan dari WhatsApp dirombak total agar jauh lebih bagus</p>
+                </div>
+            </div>
+
+            <div class="experience__box">
+                <div class="experience__heading">
+                    <h3>WEBSITE PORTOFOLIO</h3>
+                    <p class="experience__text--style">[PRIBADI]</p>
+                </div>
+                <P>Proyek Mandiri | Juni - juli 2026</P>
+                <div class="experience__content">
+                    <p>Proyek : Membuat UI,UX untuk tampilan web UPT KEARSIPAN UNNES</p>
+                    <P>Teknologi : HTML, CSS, JavaScript</P>
+                    <p>Deskripsi : Membuat tampilan web mengenai saya, pengalaman projek, dan portofolio saya </p>
+                </div>
+            </div>
+       </div>
     </section>
     
 <!--=== Portofolio: Berisi projek apa saja yang saya kerjakan ===-->
-    <section id="portofolio"> 
+    <section id="portofolio" class="portofolio"> 
         <h2>Portofolio</h2>
         
     </section>
 
 <!--=== Kontak: Berisi Email, no.telp, no.wa, github, linkend,ig  ===-->
-    <section id="kontak">
+    <section id="kontak" class="kontak">
 
-        <h2 class="heading--style">Kontak</h2>
+        <h2 class="contact__heading--style">Kontak</h2>
 
-        <div class="kontak--container">
+        <div class="kontak__container">
                  <!--email-->
-                <a href="mailto:emailkamu@gmail.com" target="_blank" class="kontak-card">
-                    <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
+                <a href="mailto:emailkamu@gmail.com" target="_blank" class="contact__card">
+                    <div class="contact__card-icon"><i class="fas fa-envelope"></i></div>
                     <h3>Email</h3>
                 </a>
                 
                 <!-- WhatsApp -->
-                <a href="https://wa.me/628xxxxxxx" target="_blank" class="kontak-card">
-                    <div class="kontak-icon"><i class="fab fa-whatsapp"></i></div>
+                <a href="https://wa.me/628xxxxxxx" target="_blank" class="contact__card">
+                    <div class="contact__card-icon"><i class="fab fa-whatsapp"></i></div>
                     <h3>WhatsApp</h3>
                 </a>
                 
                 <!-- GitHub -->
-                <a href="https://github.com/username" target="_blank" class="kontak-card">
-                    <div class="kontak-icon"><i class="fab fa-github"></i></div>
+                <a href="https://github.com/username" target="_blank" class="contact__card">
+                    <div class="contact__card-icon"><i class="fab fa-github"></i></div>
                     <h3>GitHub</h3>
                 </a>
                 
                 <!-- Instagram -->
-                <a href="https://instagram.com/username" target="_blank" class="kontak-card">
-                    <div class="kontak-icon"><i class="fab fa-instagram"></i></div>
+                <a href="https://instagram.com/username" target="_blank" class="contact__card">
+                    <div class="contact__card-icon"><i class="fab fa-instagram"></i></div>
                     <h3>Instagram</h3>
                 </a>
                 
                 <!-- LinkedIn -->
-                <a href="https://linkedin.com/in/username" target="_blank" class="kontak-card">
-                    <div class="kontak-icon"><i class="fab fa-linkedin"></i></div>
+                <a href="https://linkedin.com/in/username" target="_blank" class="contact__card">
+                    <div class="contact__card-icon"><i class="fab fa-linkedin"></i></div>
                     <h3>LinkedIn</h3>
                 </a>
             </div>
@@ -154,27 +197,27 @@
 
 </main>
 
-<footer id="credit"> <!--Credit : Berisi informasi mengenai hak cipta , keterangan teknologi, sosial media, dan motto-->
+<footer class="footer"> <!--footer : Berisi informasi mengenai hak cipta , keterangan teknologi, sosial media, dan motto-->
     
-    <div class="hak_cipta">
-        <p class="text--style1">© 2026 Manazhir Dev</p>
-        <p class="text--style2"><strong>Muhammad Manazhir Ahsan</strong></p>
+    <div class="footer__copyright">
+        <p class="footer__text--small">© 2026 Manazhir Dev</p>
+        <p class="footer__text--large"><strong>Muhammad Manazhir Ahsan</strong></p>
     </div>
 
-    <div class="ftr--container">
+    <div class="footer__container">
 
-        <div class="teknologi">
-             <p class="tekno--sty1">teknologi yang digunakan:</P>
-            <ul class="tekno--sty1">
+        <div class="footer__tech">
+             <p class="footer__tech-title">teknologi yang digunakan:</P>
+            <ul class="footer__tech-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
             </ul>
         </div>
 
-        <div class="social--links">
-            <p class="social--sty1">social media:</P>
-                <ul class="social--sty2">
+        <div class="footer__social">
+            <p class="footer__social-title">social media:</P>
+                <ul class="footer__social-list">
                     <li><a href="#" target="_blank">Instagram</a></li>
                     <li><a href="#" target="_blank">GitHub</a></li>
                     <li><a href="#" target="_blank">LinkedIn</a></li>
@@ -183,7 +226,7 @@
         
     </div>
 
-        <div class="penutup">
+        <div class="footer__motto">
             <p class="motto">"Terus Berkarya dan Inovatif"</p>
         </div>
 
