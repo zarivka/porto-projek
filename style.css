@@ -5,6 +5,68 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* ==========================================
+       WARNA UTAMA
+       ========================================== */
+    --warna-primary: #00b7ff;
+    --warna-secondary: #00ccff;
+    --warna-accent: #001366;
+    --warna-gelap: #0a37ff;
+    --warna-putih: #ffffff;
+    --warna-hitam: #000000;
+    --warna-abu: #aaaaaa;
+    --warna-card: rgb(58, 58, 58);
+    --warna-card-terang: rgb(139, 139, 139);
+    --warna-bg: rgb(0, 0, 0);
+    
+    /* ==========================================
+       GRADIENT
+       ========================================== */
+    --gradient-teks: linear-gradient(to right, #00ccff, #006079);
+    --gradient-tombol: linear-gradient(to right, #7c18ff, #0a37ff, #00e5ff);
+    --gradient-foto: linear-gradient(to bottom, #00eeff, #236e64);
+    
+    /* ==========================================
+       UKURAN & SPACING
+       ========================================== */
+    --padding-section: 150px 30px;
+    --padding-card: 20px;
+    --padding-btn: 20px 40px;
+    --gap-default: 20px;
+    --gap-nav: 40px;
+    --gap-footer: 50px;
+    
+    /* ==========================================
+       BORDER & RADIUS
+       ========================================== */
+    --radius-default: 20px;
+    --radius-btn: 5px;
+    --radius-img: 5%;
+    
+    /* ==========================================
+       FONT
+       ========================================== */
+    --font-family: 'Arial', sans-serif;
+    --font-size-heading: 24px;
+    --font-size-large: 40px;
+    --font-size-medium: 17px;
+    --font-size-small: 14px;
+    
+    /* ==========================================
+       SHADOW & EFFECT
+       ========================================== */
+    --shadow-hover: 0px 0px 20px rgba(255, 255, 255, 0.6);
+    --shadow-btn-hover: 0px 0px 20px rgba(255, 255, 255, 0.6);
+    --backdrop-blur: blur(10px);
+    
+    /* ==========================================
+       NAVBAR
+       ========================================== */
+    --navbar-height: 100px;
+    --navbar-bg: rgba(0, 0, 0, 0.9);
+}
+
 html {
     scroll-behavior: smooth;
 }
