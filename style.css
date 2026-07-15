@@ -6,65 +6,218 @@
 }
 
 :root {
-    /* ==========================================
-       WARNA UTAMA
-       ========================================== */
-    --warna-primary: #00b7ff;
-    --warna-secondary: #00ccff;
-    --warna-accent: #001366;
-    --warna-gelap: #0a37ff;
-    --warna-putih: #ffffff;
-    --warna-hitam: #000000;
-    --warna-abu: #aaaaaa;
-    --warna-card: rgb(58, 58, 58);
-    --warna-card-terang: rgb(139, 139, 139);
-    --warna-bg: rgb(0, 0, 0);
-    
-    /* ==========================================
-       GRADIENT
-       ========================================== */
-    --gradient-teks: linear-gradient(to right, #00ccff, #006079);
-    --gradient-tombol: linear-gradient(to right, #7c18ff, #0a37ff, #00e5ff);
-    --gradient-foto: linear-gradient(to bottom, #00eeff, #236e64);
-    
-    /* ==========================================
-       UKURAN & SPACING
-       ========================================== */
-    --padding-section: 150px 30px;
-    --padding-card: 20px;
-    --padding-btn: 20px 40px;
-    --gap-default: 20px;
-    --gap-nav: 40px;
-    --gap-footer: 50px;
-    
-    /* ==========================================
-       BORDER & RADIUS
-       ========================================== */
-    --radius-default: 20px;
-    --radius-btn: 5px;
-    --radius-img: 5%;
-    
-    /* ==========================================
-       FONT
-       ========================================== */
-    --font-family: 'Arial', sans-serif;
-    --font-size-heading: 24px;
-    --font-size-large: 40px;
-    --font-size-medium: 17px;
-    --font-size-small: 14px;
-    
-    /* ==========================================
-       SHADOW & EFFECT
-       ========================================== */
-    --shadow-hover: 0px 0px 20px rgba(255, 255, 255, 0.6);
-    --shadow-btn-hover: 0px 0px 20px rgba(255, 255, 255, 0.6);
-    --backdrop-blur: blur(10px);
-    
-    /* ==========================================
-       NAVBAR
-       ========================================== */
-    --navbar-height: 100px;
+    /* ============================================
+    VARIABEL NAVBAR
+    ============================================ */
+
+    /* Warna */
     --navbar-bg: rgba(0, 0, 0, 0.9);
+    --navbar-border: rgba(0, 183, 255, 0.2);
+    --navbar-text: #ffffff;
+    --navbar-text-hover: #00b7ff;
+    --navbar-logo-accent: #00b7ff;
+
+    /* Font */
+    --navbar-font-family: 'Arial', sans-serif;
+    --navbar-logo-weight: 700;  /* bold */
+    --navbar-link-weight: 500;  /* medium */
+
+    /* Ukuran */
+    --navbar-height: 75px;
+    --navbar-logo-size: 24px;
+    --navbar-link-size: 15px;
+
+    /* Spacing */
+    --navbar-padding: 0 30px;
+    --navbar-gap: 30px;
+    --navbar-link-padding: 8px 0;
+
+    /* Efek */
+    --navbar-blur: 10px;
+    --navbar-border-bottom: 2px solid rgba(0, 183, 255, 0.2);
+    --navbar-transition: all 0.3s ease;
+
+    /* ============================================
+    VARIABEL ISI WEB
+    ============================================ */
+
+    /* Warna Umum */
+    --main-bg: 	#0a0a0a;
+    --main-text: #ffffff;
+    --main-heading: #00d4ff;
+    --main-accent: #00ccff;
+    --main-accent-dark: #006079;
+
+    /* Font */
+    --main-font-family: 'Arial', sans-serif;
+    --main-heading-weight: 700;  /* bold */
+
+    /* Ukuran Font */
+    --main-heading-size: 24px;
+    --main-text-size: 16px;
+    --main-small-text: 14px;
+
+    /* Spacing */
+    --main-margin-top: 100px;
+    --main-section-margin: 150px 30px;
+    --main-heading-padding: 0 0 20px 0;
+
+    /* ============================================
+    VARIABEL BERANDA (HERO)
+    ============================================ */
+
+    --hero-text-size: 30px;
+    --hero-name-size: 40px;
+    --hero-gap: 20px;
+    --hero-margin: 100px 30px;
+    --hero-img-width: 500px;
+    --hero-img-height: 500px;
+    --hero-img-radius: 5%;
+
+    /* ============================================
+    VARIABEL TENTANG SAYA
+    ============================================ */
+
+    --about-margin: 150px 30px;
+    --about-gap: 20px;
+    --about-box-bg: #2a2a2a;
+    --about-box-radius: 20px;
+    --about-box-padding: 20px;
+    --about-box-flex: 0 0 45%;
+    --about-title-color: #00ccff;
+    --about-title-size: 20px;
+    --about-text-color: #ffffff;
+    --about-text-size: 14px;
+
+    /* ============================================
+    VARIABEL PENDIDIKAN
+    ============================================ */
+
+    --edu-margin: 150px 30px;
+    --edu-box-bg: #3a3a3a;
+    --edu-box-radius: 20px;
+    --edu-box-padding: 10px;
+    --edu-box-gap: 10px 0;
+    --edu-text-color: #ffffff;
+    --edu-title-size: 20px;
+    --edu-text-size: 16px;
+    --edu-img-width: 200px;
+    --edu-img-height: 200px;
+    --edu-img-radius: 10px;
+
+    /* ============================================
+    VARIABEL PENGALAMAN
+    ============================================ */
+
+    --exp-margin: 150px 30px;
+    --exp-card-bg: #3a3a3a;
+    --exp-card-radius: 20px;
+    --exp-card-padding: 25px 30px;
+    --exp-card-border: 5px solid #00ccff;
+    --exp-title-color: #00ccff;
+    --exp-title-size: 22px;
+    --exp-text-color: #ffffff;
+    --exp-text-size: 15px;
+    --exp-tempat-color: #aaaaaa;
+    --exp-tempat-size: 15px;
+    --exp-badge-bg: #0a37ff;
+    --exp-badge-sekolah: #ff6b00;
+    --exp-badge-pribadi: #00b894;
+    --exp-skill-bg: #0a37ff;
+    --exp-gap: 25px;
+
+    /* ============================================
+    VARIABEL PORTOFOLIO
+    ============================================ */
+
+    --port-margin: 150px 30px;
+    --port-card-bg: #3a3a3a;
+    --port-card-radius: 20px;
+    --port-card-padding: 0;
+    --port-gap: 25px;
+    --port-img-height: 200px;
+    --port-img-object: cover;
+    --port-title-color: #00ccff;
+    --port-title-size: 20px;
+    --port-text-color: #ffffff;
+    --port-text-size: 14px;
+    --port-tech-bg: #0a37ff;
+    --port-link-color: #00ccff;
+    --port-link-hover: #ffffff;
+    --port-grid-min: 300px;
+
+    /* ============================================
+    VARIABEL KONTAK
+    ============================================ */
+
+    --contact-bg: #1a1a3e;
+    --contact-padding: 50px 30px;
+    --contact-card-bg: rgba(255, 255, 255, 0.05);
+    --contact-card-hover: rgba(255, 255, 255, 0.15);
+    --contact-card-radius: 20px;
+    --contact-card-padding: 30px 25px;
+    --contact-card-border: 2px solid transparent;
+    --contact-card-border-hover: #00ccff;
+    --contact-gap: 20px;
+    --contact-icon-color: #00ccff;
+    --contact-icon-size: 50px;
+    --contact-icon-margin: 0 0 15px 0;
+    --contact-title-color: #ffffff;
+    --contact-title-size: 16px;
+    --contact-text-color: #aaaaaa;
+    --contact-text-size: 12px;
+    --contact-max-width: 1200px;
+    --contact-card-min: 140px;
+    --contact-card-max: 200px;
+    --contact-card-flex: 1 1 160px;
+    --contact-shadow: 0px 15px 30px rgba(0, 204, 255, 0.3);
+
+    /* ============================================
+    VARIABEL FOOTER
+    ============================================ */
+
+    /* Warna */
+    --footer-bg: #0a37ff;
+    --footer-text: #ffffff;
+    --footer-accent: #000000;
+    --footer-border: #ffffff;
+    --footer-hover: #000000;
+
+    /* Font */
+    --footer-font-family: 'Arial', sans-serif;
+    --footer-title-weight: 700;  /* bold */
+
+    /* Ukuran */
+    --footer-padding: 50px 30px;
+    --footer-title-size: 30px;
+    --footer-text-size: 16px;
+    --footer-small-text: 14px;
+    --footer-motto-size: 50px;
+    --footer-link-size: 18px;
+
+    /* Spacing */
+    --footer-gap: 50px;
+    --footer-margin: 10px 0;
+    --footer-list-line: 1.5;
+    --footer-border-top: 1px solid #ffffff;
+    --footer-border-padding: 30px;
+
+    /* ============================================
+    VARIABEL HAK CIPTA
+    ============================================ */
+
+    --copyright-text-size: 16px;
+    --copyright-name-size: 40px;
+    --copyright-name-color: #000000;
+
+    /* ============================================
+    VARIABEL SOSIAL MEDIA FOOTER
+    ============================================ */
+
+    --social-title-size: 30px;
+    --social-link-size: 18px;
+    --social-link-color: #ffffff;
+    --social-link-hover: #000000;
 }
 
 html {
@@ -73,7 +226,7 @@ html {
 
 /* [style bagian isi (body)] */
 body {
-    background-color:rgb(0, 0, 0);
+    background-color:var(--main-bg);
 }
 
 /*====== [Style untuk header (navigasi)] ======*/
@@ -83,8 +236,8 @@ header {
     left: 0;
     width: 100%;
     margin: 0;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.9); 
+    height:var(--navbar-height);
+    background-color:var(--navbar-bg); 
      backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
     z-index: 1000;
@@ -125,7 +278,7 @@ header {
 }
 
 .header__list a:hover {
-    color: #00b7ff;
+    color:var(--navbar-text-hover);
     transition: color 0.3s;
 }
 
@@ -154,7 +307,7 @@ h2 {
     font-family: 'Arial', sans-serif;
     font-size: 24px;
     padding-bottom: 20px;
-    color: rgb(0, 195, 255);
+    color:var(--main-heading);
     
 }
 
@@ -237,7 +390,7 @@ button:hover {
 /*== box ==*/
 .about__box {
     flex: 0 0 45%;
-    background: rgb(139, 139, 139);
+    background:var(--about-box-bg);
     padding: 20px;
     border-radius: 20px;
 }
@@ -370,7 +523,7 @@ button:hover {
 /*==== kontak ====*/
 .kontak {
    padding: 50px 30px;
-   background-color: #001366;
+   background-color:var(--contact-bg);
    height: auto;
    width: auto;
 }
@@ -430,7 +583,7 @@ button:hover {
 
 /*====== footer ======*/
 .footer {
-    background-color:  #0a37ff;
+    background-color:var(--footer-bg);
     width: auto;
     height: auto;
     padding: 50px 30px;
